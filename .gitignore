@@ -1,2 +1,4 @@
 .waf*/
 .lock-wafbuild
+waf-launcher/waf-launcher.pidb
+waf-launcher.userprefs
