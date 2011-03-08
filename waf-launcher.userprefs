@@ -1,14 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" ctype="Workspace" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" ctype="Workspace" />
   <MonoDevelop.Ide.Workbench ActiveDocument="waf-launcher/Main.cs" ctype="Workbench">
     <Files>
-      <File FileName="waf-launcher/Main.cs" Line="8" Column="40" />
+      <File FileName="waf-launcher/Main.cs" Line="64" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches ctype="PinnedWatchStore" />
+  <AuthorInfo Name="Jes Andersen" Email="" Copyright="Public Domain" ctype="AuthorInformation" />
   <MonoDevelop.Ide.ItemProperties.waf-launcher ctype="Properties">
     <MonoDevelop.Ide.CustomExecutionModes ctype="CustomExecutionModes">
       <Data Name="Default (Custom)" Id="4cce5acc-a8a8-45f5-96c2-fffeca21149a" ModeId="Default">

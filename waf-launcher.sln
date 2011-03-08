@@ -16,5 +16,6 @@ Global
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = waf-launcher\waf-launcher.csproj
+		version = 1.0
 	EndGlobalSection
 EndGlobal
