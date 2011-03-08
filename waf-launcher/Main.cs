@@ -20,10 +20,7 @@ namespace waflauncher
 		}
 		
 		public static int Main (string[] args)
-		{
-			//I change place to the place the exe file located since that will be the place where the waf script is as well
-			changeDir();
-			
+		{			
 			//I run waf and if not succesful we try on-the-fly install of python
 			if(!runWaf(args)){
 				//but first we ask the user if it's okay to install software on their computer
@@ -61,17 +58,15 @@ namespace waflauncher
 			}
 		}
 		
-		public static void changeDir(){
+		public static String getwafDir(){
 			//This changes the current directory to the place where the exe exists
 			System.Reflection.Assembly a = System.Reflection.Assembly.GetEntryAssembly();
 			String path = System.IO.Path.GetDirectoryName(a.Location);
-			System.IO.Directory.SetCurrentDirectory(path);
+			return path + System.IO.Path.DirectorySeparatorChar;
 		}
 		
 		public static bool runWaf(string[] args){
-			ProcessStartInfo startinfo = new ProcessStartInfo("python","waf " + String.Join(" ",args));
-			startinfo.UseShellExecute = false;
-			Process p = exec("python","waf",String.Join(" ",args));
+			Process p = exec("python",getwafDir() + "waf",String.Join(" ",args));
 			//If command could be execeuted return true
 			if(p!=null) return true;
 			//If not try with the direct path to the default installation which is where installPython() will install it to
