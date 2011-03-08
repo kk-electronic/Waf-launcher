@@ -1,3 +1,7 @@
+#DEPRECATED
+This project is now part of the [official waf source](http://code.google.com/p/waf/source/browse/trunk/utils/launcher/)
+and is no longer maintained here.
+
 #Waf-launcher
 This is a simple wrapper for the 
 [waf build system](http://code.google.com/p/waf/)
